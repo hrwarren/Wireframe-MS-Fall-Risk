@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aboutItems">
+        <item>Multiple Sclerosis</item>
+        <item>Wearable Sensors</item>
+        <item>Falling Biomechanics</item>
+        <item>The M-Sense Group</item>
+        <item>About this App</item>
+    </string-array>
+</resources>
