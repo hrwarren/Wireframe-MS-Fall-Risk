@@ -38,8 +38,11 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
     @Override
     // Create and inflate the About page's viewholder
     public AboutAdapter.AboutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.about_headercard, parent, false);
-        AboutViewHolder holder = new AboutViewHolder(view);
+        //View headerView = LayoutInflater.inflate(R.layout.about_headercard, parent, false);
+
+        AboutViewHolder holder = new AboutViewHolder(view); //possibly AboutViewHolder(headerView)
         return holder;
     }
 
@@ -87,60 +90,3 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-//
-//private class AboutAdapter extends RecyclerView.Adapter {
-//    List<AboutHeaderItems> list = Collections.emptyList();
-//    Context context;
-//
-//
-//    public AboutAdapter(List<AboutHeaderItems> list, Context context) {
-//        this.list = list;
-//        this.context = context;
-//    }
-//
-//    @Override
-//    public AboutViewHolder
-//    onCreateViewHolder(ViewGroup parent, int viewType) {
-//        Context context = parent.getContext();
-//        LayoutInflater inflater = LayoutInflater.from(context);
-//
-//        //Inflate the layout
-//        View textView = inflater.inflate(R.layout.about_headercard, parent, false);
-//
-//        AboutViewHolder viewHolder = new AboutViewHolder(textView);
-//        return viewHolder;
-//    }
-//
-//    @Override
-//    public void onBindViewHolder(@NonNull AboutViewHolder viewHolder, int position) {
-//        viewHolder.aboutHeader.setText(list.get(position).header);
-//
-//    }
-//
-//
-//    @Override
-//    public int getItemCount() {
-//        return list.size();
-//    }
-//
-//    // Should there be an override notation here?
-//    private List<AboutHeaderItems> getData() {
-//        List<AboutHeaderItems> list = new ArrayList<>();
-//        list.add(new AboutHeaderItems("@strings/falling_biomechanics"));
-//        list.add(new AboutHeaderItems("@strings/msense_group"));
-//        return list;
-//
-//    }
-//}

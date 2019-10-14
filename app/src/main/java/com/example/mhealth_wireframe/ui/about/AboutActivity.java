@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class AboutActivity extends AppCompatActivity {
 
     // At some point I'll figure out why all these logs are useful
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "MainActivityNav";
 
     // Variables
     private ArrayList<String> aboutHeaders = new ArrayList<>();
@@ -27,7 +27,18 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_about);
         Log.d(TAG, "onCreate started.");
 
+        initHeaderNames();
+
     }
+
+    private void initHeaderNames() {
+        aboutHeaders.add("@string/falling_biomechanics");
+        aboutHeaders.add("@string/multiple_sclerosis");
+        aboutHeaders.add("@string/about_the_app");
+        aboutHeaders.add("@string/msense_group");
+    }
+
+
 
     // Initializing the recycler view
     private void initRecyclerView() {
@@ -39,5 +50,3 @@ public class AboutActivity extends AppCompatActivity {
 
     }
 }
-
-//Testing to see if github counts this as a change

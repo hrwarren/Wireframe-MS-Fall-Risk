@@ -16,12 +16,84 @@
         android:text="@string/hello_world"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="attr/colorPrimary"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <View style="@style/"-->
+<!--        android:layout_below="@+id/xVall"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/xVall"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textView2"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Accel: X"-->
+<!--        android:textColor="@color/Black"-->
+<!--        android:textSize="17sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/yVall"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="100dp"-->
+<!--        android:layout_below="@id/textView2"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Accel: Y"-->
+<!--        android:textColor="@color/Black"-->
+<!--        android:textSize="17sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/zVall"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_below="@id/textView2"-->
+<!--        android:layout_marginStart="200dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Accel: Z"-->
+<!--        android:textColor="@color/Black"-->
+<!--        android:textSize="17sp"/>-->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:text="Fall Risk Over Time"
+        android:textColor="@color/Black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        tools:layout_editor_absoluteX="142dp" />
+
+<!--    <com.jjoe64.graphview.GraphView-->
+<!--        android:id="@+id/chart1"-->
+<!--        android:layout_width="match_parent"-->
+
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginBottom="50dp"-->
+
+<!--        app:layout_constraintBottom_toTopOf="@+id/nav_view" />-->
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chart1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="176dp"
+        android:text="@string/time_s"
+        android:textColor="@color/Black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart1" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"

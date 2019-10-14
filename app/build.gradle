@@ -30,7 +30,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.1.0'
 
     //Recycler view
-    implementation 'androidx.recyclerview.recyclerview:1.0.0'
+    //implementation 'androidx.recyclerview.recyclerview:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
 
     //God knows

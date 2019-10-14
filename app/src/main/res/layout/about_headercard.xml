@@ -4,14 +4,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="80dp"
-    android:layout_centerVertical="true">
+    android:layout_centerVertical="true"
+    android:layout_margin="80dp">
 
 
     <TextView
         android:id="@+id/about_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/falling_biomechanics"
         android:textColor="@color/Black"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
