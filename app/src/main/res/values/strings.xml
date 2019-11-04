@@ -8,6 +8,10 @@
 
     <string name="hello_world">Hello World</string>
     <string name="falling_biomechanics">Falling Biomechanics</string>
+    <string name="msense_group">M-Sense Group</string>
+    <string name="about_the_app">The App</string>
+    <string name="multiple_sclerosis">Multiple Sclerosis</string>
+    <string name="title_history">History</string>
 
 
 </resources>

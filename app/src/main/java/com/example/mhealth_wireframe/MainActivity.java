@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 
+import com.example.mhealth_wireframe.ui.about.AboutFragment;
 import com.example.mhealth_wireframe.ui.dashboard.DashboardFragment;
 import com.example.mhealth_wireframe.ui.home.HomeFragment;
 import com.example.mhealth_wireframe.ui.notifications.NotificationsFragment;
@@ -37,9 +38,9 @@ public class MainActivity extends AppCompatActivity
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_about)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment); //originally nav_host_fragment; making it mobile_navigation or nav_view crashes app
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
@@ -78,6 +79,10 @@ public class MainActivity extends AppCompatActivity
 
             case R.id.navigation_notifications:
                 fragment = new NotificationsFragment();
+                break;
+
+            case R.id.navigation_about:
+                fragment = new AboutFragment();
                 break;
 
         }
