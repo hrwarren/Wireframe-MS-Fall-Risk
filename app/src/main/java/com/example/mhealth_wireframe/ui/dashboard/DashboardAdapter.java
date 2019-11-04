@@ -1,4 +1,4 @@
-package com.example.mhealth_wireframe.ui.about;
+package com.example.mhealth_wireframe.ui.dashboard;
 
 import android.content.Context;
 import android.util.Log;
@@ -15,19 +15,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mhealth_wireframe.R;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 
-public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHolder> {
-    private static final String TAG = "AboutAdapter";
+public class DashboardAdapter extends RecyclerView.Adapter<DashboardAdapter.AboutViewHolder> {
+    private static final String TAG = "DashboardAdapter";
 
     // The list of strings for the headers, as well as the context
     private ArrayList<String> mAboutHeaders;
     private Context mContext;
 
     // Populate that array, I think??
-    public AboutAdapter(ArrayList<String> aboutHeaders, Context context) {
+    public DashboardAdapter(ArrayList<String> aboutHeaders, Context context) {
         mAboutHeaders = aboutHeaders;
         mContext = context;
     }
@@ -37,14 +35,14 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
     @NonNull
     @Override
     // Create and inflate the About page's viewholder
-    public AboutAdapter.AboutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.about_headercard, parent, false);
+    public DashboardAdapter.AboutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.dashboard_headercard, parent, false);
         AboutViewHolder holder = new AboutViewHolder(view);
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AboutAdapter.AboutViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull DashboardAdapter.AboutViewHolder holder, final int position) {
 
         // Create a log for debugging
         Log.d(TAG, "onMindViewHolder: called.");
@@ -100,12 +98,12 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
 
 
 //
-//private class AboutAdapter extends RecyclerView.Adapter {
+//private class DashboardAdapter extends RecyclerView.Adapter {
 //    List<AboutHeaderItems> list = Collections.emptyList();
 //    Context context;
 //
 //
-//    public AboutAdapter(List<AboutHeaderItems> list, Context context) {
+//    public DashboardAdapter(List<AboutHeaderItems> list, Context context) {
 //        this.list = list;
 //        this.context = context;
 //    }
@@ -117,7 +115,7 @@ public class AboutAdapter extends RecyclerView.Adapter<AboutAdapter.AboutViewHol
 //        LayoutInflater inflater = LayoutInflater.from(context);
 //
 //        //Inflate the layout
-//        View textView = inflater.inflate(R.layout.about_headercard, parent, false);
+//        View textView = inflater.inflate(R.layout.dashboard_headercard, parent, false);
 //
 //        AboutViewHolder viewHolder = new AboutViewHolder(textView);
 //        return viewHolder;

@@ -2,13 +2,13 @@ package com.example.mhealth_wireframe.ui.about;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mhealth_wireframe.R;
+import com.example.mhealth_wireframe.ui.dashboard.DashboardAdapter;
 
 import java.util.ArrayList;
 
@@ -33,7 +33,7 @@ public class AboutActivity extends AppCompatActivity {
     private void initRecyclerView() {
         Log.d(TAG, "initRecyclerView: ");
         RecyclerView aboutRecyclerView = findViewById(R.id.about_recyclerView);
-        AboutAdapter adapter = new AboutAdapter(aboutHeaders, this);
+        DashboardAdapter adapter = new DashboardAdapter(aboutHeaders, this);
         aboutRecyclerView.setAdapter(adapter);
         aboutRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
